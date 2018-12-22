@@ -24,6 +24,7 @@ function Word(chosenWord, spaceHolder, lettersInWord) {
     this.spaceHolder = spaceHolder;
     this.lettersInWord = lettersInWord;
 };
+
 // placeholders for all words in wordSelection - starts each game
 Word.prototype.placeHolder = function() {
 

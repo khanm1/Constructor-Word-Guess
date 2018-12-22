@@ -1,4 +1,4 @@
-// Using the require keyword lets us access all of the exports in our word.js file
+// Using the require keyword lets us access all of the exports in my word.js file
 var inquirer = require("inquirer");
 var prompt = require("prompt");
 
@@ -73,7 +73,7 @@ var startGame = function() {
     console.log("Number of Guesses: ", numberOfGuesses); 
     console.log("Hangman Word: ", spaceHolder);
    
-      for (var i = 0; i < lettersInWord.length; i++)  // lettersInWord shows hangman letter in spaceholder NOT wordArray
+      for (var i = 0; i < lettersInWord.length; i++)  // lettersInWord shows letter in spaceholder NOT wordArray
         {   
           if (lettersInWord[i] === letterGuessed) 
           {
