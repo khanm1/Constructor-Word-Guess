@@ -9,20 +9,25 @@ var wordSelection = ["trace scheduling", "fortran", "formatting", "objects", "pr
 
 // randomized word chosen from wordOptons[]
 var chosenWord = wordSelection[Math.floor(Math.random() * wordSelection.length)];
+
 // blank space array  "__ __" to use in placeHolder();
 var spaceHolder = [];
+
 // split word and store in var
 var lettersInWord = chosenWord.split("");
 // display "__" + letterGuessed correctly
+
 //var lettersWithPlaceholders = [];
 var lettersWithPlaceholders = [];
+
 // string for user guesses
 var letterGuessed = "";
+
 // letters in word length
 var lettersInWordLength = lettersInWord.length;
 var numberOfGuesses = lettersInWordLength;
-// constructor function used to create objects
 
+// constructor function used to create objects
 function Word(chosenWord, spaceHolder, lettersInWordLength, letterGuessed, lettersInWord) {
     this.chosenWord = chosenWord;
     this.spaceHolder = spaceHolder;
@@ -33,6 +38,7 @@ function Word(chosenWord, spaceHolder, lettersInWordLength, letterGuessed, lette
 
 // placeholders for all words in wordSelection - starts each game
 Word.prototype.placeHolder = function() {
+
     // based on # of letters in chosenWord.
     for (var i = 0; i < lettersInWordLength; i++) {
         spaceHolder.push("__");
@@ -42,6 +48,7 @@ Word.prototype.placeHolder = function() {
 };
 
 var word = new Word(chosenWord, letterGuessed, lettersInWord);
+
 // run placeholder prototype function to start game "__ __ " 
 word.placeHolder();
 

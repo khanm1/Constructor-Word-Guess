@@ -1,6 +1,7 @@
 // dependency for inquirer npm package
 var inquirer = require("inquirer");
 var prompt = require("prompt");
+
 // Using the require keyword lets us access all of the exports in our word.js file
 var letter = require("./letter.js");
 
